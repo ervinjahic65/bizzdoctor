@@ -698,7 +698,8 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
+        <h2>Ready to Apply or Have Questions?</h2>
+        <p>If you are interested in applying to work at {Company}, or if you have any questions please fill out the form below and we'll send you a link to book a convenient time for a chat.</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -710,28 +711,42 @@
               <div class="row gy-4">
 
                 <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                  <input type="text" name="first_name" class="form-control" placeholder="First Name" required="">
                 </div>
 
-                <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                <div class="col-md-6">
+                  <input type="text" class="form-control" name="last_name" placeholder="Last Name" required="">
                 </div>
 
                 <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                  <input type="email" class="form-control" name="email" placeholder="Email" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <input type="text" class="form-control" name="phone" placeholder="Phone" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <label for="doctor-type">What type of doctor are you?</label><br>
+                  <input type="checkbox" id="gp-fellow" name="doctor_type" value="GP Fellow"> GP Fellow / VR-GP<br>
+                  <input type="checkbox" id="gp-registrar" name="doctor_type" value="GP Registrar"> GP Registrar / AGPT<br>
+                  <input type="checkbox" id="medical-officer" name="doctor_type" value="Medical Officer"> Medical Officer (PGY1 or 2)<br>
+                </div>
+
+                <div class="col-md-12">
+                  <label for="shift-type">What shifts are you looking for?</label><br>
+                  <input type="checkbox" id="home-visit" name="shift_type" value="Home Visit"> Home Visit<br>
+                  <input type="checkbox" id="telehealth" name="shift_type" value="Telehealth"> Telehealth<br>
+                  <input type="checkbox" id="both" name="shift_type" value="Both"> Both<br>
                 </div>
 
                 <div class="col-md-12 text-center">
-
-                  <button type="submit">Send Message</button>
+                  <button type="submit">Submit</button>
                 </div>
 
               </div>
             </form>
+            
             <script>
               document.getElementById("form").addEventListener("submit", function (e) {
                   e.preventDefault();
@@ -750,6 +765,7 @@
       </div>
 
     </section><!-- /Contact Section -->
+
 
   </main>
 
