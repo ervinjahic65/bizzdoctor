@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Bizz Doctor - Hubungi Kami</title>
+ 
+  <link rel="stylesheet" href="files/all.min.css">
+  <link rel="stylesheet" href="files/bootstrap.min.css">
+  <link rel="stylesheet" href="files/bootstrap-icons.css">
+  <link rel="stylesheet" href="files/aos.min.css">
+  <link rel="stylesheet" href="files/font-awesome.min.css">
+  <link rel="stylesheet" href="files/glightbox.min.css">
+  <link rel="stylesheet" href="files/swiper-bundle.min.css">
+
+  <link rel="stylesheet" href="files/custom.css">
+
+  <!-- Main CSS File -->
+  <link href="files/main.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="files/logo.png" sizes="16x16">
+</head>
+
+<body class="index-page">
+  <header id="header" class="header sticky-top">
+    <div class="branding d-flex align-items-center">
+      <div class="container position-relative d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo d-flex align-items-center me-auto">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <img src="files/logo.png" alt="Logo">
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <section id="privacy" class="privacy section">
+      <div class="container">
+        <h2>Hubungi Kami</h2>
+        <p>Tinggalkan pesan untuk kami</p>
+        <div class="col-lg-12" style="margin: 0 0 5% 0;">
+            <form id="form" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Nama Anda" required="">
+                </div>
+
+                <div class="col-md-6 ">
+                  <input type="email" class="form-control" name="email" placeholder="Email Anda" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <input type="text" class="form-control" name="subject" placeholder="Subjek" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Pesan" required=""></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <button class="btn btn-primary" type="submit">Kirim Pesan</button>
+                </div>
+
+              </div>
+            </form>
+            <script>
+              document.getElementById("form").addEventListener("submit", function (e) {
+                  e.preventDefault();
+              
+                  document.getElementById("form").innerHTML = '<div style="text-align: center;"><img src="files/loading.gif" width="80"></div>';
+              
+                  setTimeout(() => {
+                      document.getElementById("form").innerHTML = '<p style="font-size: 18px; color:black; font-weight: 700; text-align: center;">Terima kasih telah mendaftar dengan Bizz Doctor. Tim kami akan segera menghubungi Anda untuk membahas opsi Anda.</p>';
+                  }, 2000);
+              });
+            </script>            
+          </div><!-- End Contact Form -->
+    </section>
+  </main>
+
+  <footer id="footer" class="footer light-background">
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-6 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">Bizz Doctor</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>
+              Nomor Perusahaan: 00943935 <br>
+              Alamat: Lime St, London EC3M 7HR, UK <br>
+              Nomor Telepon: 01632 960189 <br>
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-6 footer-links">
+          <h4>Perusahaan</h4>
+          <ul>
+            <li><a href="about.html">Tentang kami</a></li>
+            <li><a href="contact.html">Hubungi Kami</a></li>
+            <li><a href="terms.html">Syarat dan Ketentuan</a></li>
+            <li><a href="privacy.html">Hubungi Kami</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Hak Cipta</span> <strong class="px-1 sitename">Bizz Doctor 2025.</strong> <span>Semua Hak Dilindungi</span></p>
+      <div class="credits">
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
+
+  <script src="files/bootstrap.bundle.min.js"></script>
+  <script src="files/aos.min.js"></script>
+  <script src="files/glightbox.min.js"></script>
+  <script src="files/purecounter_vanilla.min.js"></script>
+  <script src="files/swiper-bundle.min.js"></script>
+  <!-- Main JS File -->
+  <script src="files/main.js"></script>
+</body>
+
+</html>

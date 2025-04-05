@@ -1,0 +1,15 @@
+.php-email-form div {
+    padding: 1% !important;
+}
+
+button {
+    cursor:  pointer !important;
+}
+
+input.form-control {
+    border: 1px solid #000 !important;
+}
+
+#contact {
+    background-color: #ddd !important;
+}
