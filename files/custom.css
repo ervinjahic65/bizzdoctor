@@ -9,3 +9,7 @@ button {
 input.form-control {
     border: 1px solid #000 !important;
 }
+
+#contact {
+    background-color: #ddd !important;
+}
