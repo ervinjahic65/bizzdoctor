@@ -1,3 +1,7 @@
 .php-email-form div {
     padding: 1% !important;
 }
+
+button {
+    cursor:  pointer !important;
+}
